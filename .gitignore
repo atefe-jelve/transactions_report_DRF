@@ -5,3 +5,12 @@
 __pycache__/
 *.sqlite3
 dockerfile
+.env
+*.sqlite3
+*.swp
+.DS_Store
+db.sqlite3
+/media
+/static
+.env
+docker-compose.override.yml
