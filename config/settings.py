@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(-#*b$+(k2b+5&j%#w(()9v$@%&p*u*994p@$prp04qrxap7!k'
+SECRET_KEY = '***'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -67,7 +67,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # MongoDB Connection
-MONGO_DB_URI = "mongodb://localhost:27017/"
+import os
+
+MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb://localhost:27017/")
 MONGO_DB_NAME = "zibal_db"
 
 

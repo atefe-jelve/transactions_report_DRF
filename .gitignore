@@ -4,8 +4,10 @@
 *.pyc
 __pycache__/
 *.sqlite3
-dockerfile
+Dockerfile
+dockerfile.mongo
 .env
+*.db.sqlite3
 *.sqlite3
 *.swp
 .DS_Store
@@ -14,3 +16,5 @@ db.sqlite3
 /static
 .env
 docker-compose.override.yml
+docker-compose.yml
+
